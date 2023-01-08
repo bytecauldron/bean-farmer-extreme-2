@@ -1,0 +1,1 @@
+draw_sprite(sprite_index, image_index, iotaX+react_lerp*random_range(-10,10), iotaY+react_lerp*random_range(-10,10));

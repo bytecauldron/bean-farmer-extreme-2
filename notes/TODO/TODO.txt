@@ -1,0 +1,13 @@
+More Score Juice
+Camera Screenshake
+Add new enemies
+Add temp invincibility?
+Add clear screen item?
+
+Add More Upgrades?
+	Changing distance of bullet.
+	Increase bullet damage?
+
+Sprites:
+Add fields
+Add beanstalk forest
