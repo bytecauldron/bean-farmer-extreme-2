@@ -9,6 +9,8 @@ enemy_types = [obj_enemy_crow];
 enemy_count_max = 50;
 enemy_count = enemy_count_max;
 
+point_multiplier = 1;
+
 // Upgrades
 upgrades = [obj_upgrade_firerate,
 			obj_upgrade_speed,
@@ -62,7 +64,7 @@ global.clock.AddCycleMethod(function()
 					current_rail = other.chosen_rail;
 				}
 				
-				if(irandom(500-current_wave) == 1) {
+				if(irandom(400-current_wave) == 1) {
 				
 					with(instance_create_layer(SW+enemy_spawn_xoffset,rail_anchor+chosen_rail*rail_distance,"Instances",obj_enemy_mega)) {
 						current_rail = other.chosen_rail;
@@ -83,6 +85,9 @@ global.clock.AddCycleMethod(function()
 	if(music_countdown_to_loop) {
 		if(music_wave_loop_timer <= 0) {
 			music = audio_play_sound(mu_wave_loop, 0, true, 1, 0, 1);
+			if(!wave_active) {
+				audio_sound_gain(music, 0.5, 0);	
+			}
 			music_countdown_to_loop = false;
 		} else {
 			music_wave_loop_timer--;
@@ -113,6 +118,7 @@ function break_time() {
 	//if(amb != undefined) audio_stop_sound(amb);
 	audio_sound_gain(music, 0.5, 1000);
 
+	audio_play_sound(snd_victory, 0, false);
 
 	wave_active = false;
 	var _upgrade_xpadding = 128;

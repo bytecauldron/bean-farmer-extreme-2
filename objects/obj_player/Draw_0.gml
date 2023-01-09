@@ -1,1 +1,1 @@
-draw_sprite_ext(sprite_index, -1, iotaX, iotaY, 1+react_lerp/5, 1-react_lerp/5, iotaImageAngle, c_white, 1);
+draw_sprite_ext(sprite_index, -1, iotaX, iotaY, 1+react_lerp/4, 1-react_lerp/4, iotaImageAngle, c_white, 1);

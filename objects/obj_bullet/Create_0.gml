@@ -22,7 +22,7 @@ global.clock.AddCycleMethod(function()
 		
 		_enemy.hp -= damage;
 		if(_enemy.hp <= 0) {
-			obj_world.current_score += _enemy.enemy_points;
+			obj_world.current_score += _enemy.enemy_points*obj_world.point_multiplier;
 			obj_world.score_lerp = 1;
 			_enemy.destroyed = true;
 		}

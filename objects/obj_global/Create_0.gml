@@ -1,4 +1,4 @@
-show_debug_overlay(true);
+show_debug_overlay(false);
 
 #macro SW surface_get_width(application_surface)
 #macro SH surface_get_height(application_surface)

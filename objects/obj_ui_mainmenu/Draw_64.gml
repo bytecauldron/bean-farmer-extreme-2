@@ -15,7 +15,7 @@ if(current_menu == MENU.MAIN) {
 		.align(fa_center,fa_center)
 		.draw(SW/2+random_range(-shake_lerp, shake_lerp),SH/1.3+random_range(-shake_lerp, shake_lerp));
 
-	scribble("[c_orange]C[/c]redits - [c_orange]H[/c]ow to Play")
+	scribble("[c_orange]C[/c]redits - [c_orange]H[/c]ow to Play - [c_orange]ESC[/c]ape")
 		.align(fa_center,fa_center)
 		.draw(SW/2,SH/1.1);
 

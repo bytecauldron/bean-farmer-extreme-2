@@ -5,6 +5,7 @@ text					= "3 Bullets";
 function upgrade() {
 	
 	obj_player.trishot = true;
+	obj_player.fire_timer_max *= 2;
 	
 	for(var i = 0; i < array_length(obj_world.upgrades); i++) {
 		if(obj_world.upgrades[i] == obj_upgrade_trishot) {

@@ -1,4 +1,4 @@
-text = "[font_press_start]It's a topsy-turvy world,[delay,500] and maybe the problems\nof two people don't amount to a hill of beans;[delay,500]\nbut this is our hill.[delay,500].[delay,500]. [delay,1000][c_green]and these are our beans![delay,1000][scale,1][/c]\n\n-Lt. Frank Drebin";
+text = "[font_press_start]It's a topsy-turvy world,[delay,500] and maybe the problems\nof two people don't amount to a hill of beans;[delay,500]\nbut this is our hill.[delay,500].[delay,500]. [delay,1000]and these are our [c_green]beans![/c][delay,1000][scale,1]\n\n-Lt. Frank Drebin";
 
 typist = scribble_typist();
 typist.sound([snd_text], 10, 1, 1);

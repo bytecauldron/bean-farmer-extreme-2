@@ -2,7 +2,7 @@ scribble(text)
 	.align(fa_center,fa_center)
 	.draw(SW/2+random_range(-shake_lerp, shake_lerp),SH/2+random_range(-shake_lerp, shake_lerp));
 	
-scribble("[font_press_start][scale,2]FINAL SCORE: " + string(obj_world.current_score))
+scribble("[font_press_start][scale,2]FINAL SCORE: " + string(obj_world.current_score) + " [scale,1](wave " + string(obj_world.current_wave) +")")
 	.align(fa_center,fa_center)
 	.draw(SW/2+random_range(-shake_lerp, shake_lerp),SH/1.5+random_range(-shake_lerp, shake_lerp));
 

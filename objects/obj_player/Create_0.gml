@@ -86,9 +86,19 @@ global.clock.AddCycleMethod(function()
 		x += hsp;
 		image_angle -= spin_rate;
 		if(y >= SH + sprite_width) instance_destroy();
+		obj_camera.shake_lerp = 1;
 	}
 	
 	react_lerp = lerp(react_lerp, 0, 0.2);
+
+
+	// It's a secret to everyone.
+	if(keyboard_check_pressed(vk_f7)) {
+	
+		sprite_index = spr_dawdle;
+		if(instance_exists(obj_player_hat)) obj_player_hat.image_index = 1;
+	
+	}
 
 });
 
@@ -107,3 +117,6 @@ function player_move(_amount) {
 	}
 
 }
+
+// Hat
+instance_create_layer(x, y, "Instances", obj_player_hat);

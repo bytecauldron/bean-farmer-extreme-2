@@ -1,0 +1,1 @@
+draw_sprite_ext(sprite_index, -1, iotaX, iotaY, 1, 1, iotaImageAngle, c_white, 1);

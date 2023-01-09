@@ -32,9 +32,9 @@ INPUT_DEFAULT_PROFILES = {
         left:  [input_binding_gamepad_axis(gp_axislh, true),  input_binding_gamepad_button(gp_padl)],
         right: [input_binding_gamepad_axis(gp_axislh, false), input_binding_gamepad_button(gp_padr)],
         
-        shoot:  input_binding_gamepad_button(gp_face1),
+        shoot:  input_binding_gamepad_button(gp_face3),
 		select: input_binding_gamepad_button(gp_face2),
-		credits: input_binding_gamepad_button(gp_face3),
+		credits: input_binding_gamepad_button(gp_face1),
         back: input_binding_gamepad_button(gp_face4),
 		how: input_binding_gamepad_button(gp_select),
 

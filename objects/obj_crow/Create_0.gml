@@ -10,8 +10,7 @@ with(obj_crow) {
 randomize();
 flip = choose(-1,1);
 
-
-image_angle = random_range(-30,10);
+image_angle = random_range(0,60*flip);
 
 // Interpolation
 global.clock.VariableInterpolate("x", "iotaX");
@@ -22,5 +21,7 @@ global.clock.AddCycleMethod(function()
 {
 	
 	init_lerp = lerp(init_lerp, 0, 0.1);
+	
+	image_angle += sin(current_time/400)/10;
 	
 });

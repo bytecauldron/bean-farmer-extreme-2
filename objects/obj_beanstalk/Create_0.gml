@@ -1,3 +1,5 @@
+init_lerp = 0;
+
 current_rail = -1;
 image_xscale = 2;
 image_yscale = 2;
@@ -8,6 +10,8 @@ global.clock.VariableInterpolate("y", "iotaY");
 
 global.clock.AddCycleMethod(function()
 {
+	
+	init_lerp = lerp(init_lerp, 1, 0.1);
 	
 	// Collision Check
 	var _enemy = collision_circle(x,y,sprite_width/4,obj_enemy,false,true);

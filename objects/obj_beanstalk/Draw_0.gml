@@ -1,1 +1,1 @@
-draw_sprite_ext(sprite_index, -1, iotaX, iotaY, image_xscale, image_yscale, 0, c_white, 1);
+draw_sprite_ext(sprite_index, -1, iotaX, iotaY, image_xscale*init_lerp, image_yscale*init_lerp, 0, c_white, 1);
